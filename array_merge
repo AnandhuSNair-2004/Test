@@ -1,0 +1,38 @@
+#include<stdio.h>
+int main()
+{
+int s1,s2,i;
+printf("enter the size of the first array:");
+scanf("%d",&s1);
+int arr1[s1];
+printf("enter the %d element of the array:",s1);
+for(i=0;i<s1;i++)
+{
+scanf("%d",&arr1[i]);
+}
+printf("enter the size of the second array:");
+scanf("%d",&s2);
+int arr2[s2];
+printf("enter the %d element of the array:",s2);
+for(i=0;i<s2;i++)
+{
+scanf("%d",&arr2[i]);
+}
+int s3=s1+s2;
+int arr3[s3];
+for(i=0;i<s1;i++)
+{
+arr3[i]=arr1[i];
+}
+for(i=0;i<s2;i++)
+{
+arr3[s1+i]=arr2[i];
+}
+printf("Merged array is:");
+for(i=0;i<s3;i++)
+{
+printf("%d",arr3[i]);
+}
+return 0;
+}
+
