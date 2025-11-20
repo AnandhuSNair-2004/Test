@@ -1,3 +1,11 @@
+class Rectangle:
+ def __init__(self, length, breadth):
+ # Private attributes using single underscore (convention)
+ self._length = length
+ self._breadth = breadth
+ def area(self):
+ # Calculate and return the area of the rectangle
+ return self._length * self._breadth
 def __lt__(self, other):
  # Overloading '<' operator to compare areas of two rectangles
  return self.area() < other.area()
